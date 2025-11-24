@@ -90,7 +90,7 @@ const App: React.FC = () => {
             // Using 'gemini-2.5-flash-image' (Nano Banana) for broader access and speed
             // Note: This model does not support 'imageSize' in config.
             const response = await ai.models.generateContent({
-                model: 'gemini-2.5-flash-image',
+                model: 'gemini-3-pro-image-preview',
                 contents: {
                     parts: parts,
                 },
