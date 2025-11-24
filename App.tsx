@@ -55,7 +55,7 @@ const App: React.FC = () => {
         setTemplateDataUrl(null);
 
         try {
-            const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+            const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
             let systemPrompt = "";
 
